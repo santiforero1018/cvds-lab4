@@ -13,6 +13,13 @@ public class BonusScore implements GameScore {
      * @throws
      */
     public int calculateScore(int count, int incorrectCount){
-        return 0;
+        int puntaje = 0;
+        if (puntaje+10*count-5*incorrectCount < 0){
+            puntaje = 0;
+        }
+        else {
+            puntaje = puntaje+10*count-5*incorrectCount;
+        }
+        return puntaje;
     }
 }

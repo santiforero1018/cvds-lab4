@@ -15,6 +15,14 @@ public class OriginalScore implements GameScore {
      * @throws
      */
     public int calculateScore(int count, int incorrectCount){
-        return 0;
+        int puntaje = 0;
+        if (100-10*incorrectCount < 0){
+            puntaje = 0;
+        }
+        else {
+            puntaje = 100-10*incorrectCount;;
+        }
+
+        return puntaje;
     }
 }
