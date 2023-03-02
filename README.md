@@ -1,6 +1,6 @@
 ### Escuela Colombiana de Ingeniería
 
-##Santiago Forero Yate, Juan Sebastian Cepeda Saray
+#### Santiago Forero Yate, Juan Sebastian Cepeda Saray
 
 ### Procesos de Desarrollo de Software
 
