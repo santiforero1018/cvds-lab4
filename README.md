@@ -1,5 +1,7 @@
 ### Escuela Colombiana de Ingeniería
 
+##Santiago Forero Yate, Juan Sebastian Cepeda Saray
+
 ### Procesos de Desarrollo de Software
 
 ### Desarrollo Dirigido por Pruebas + DIP + DI + Contenedores Livianos
