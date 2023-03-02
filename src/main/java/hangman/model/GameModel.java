@@ -17,8 +17,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-import com.google.inject.Inject;
-
 
 public class GameModel {
     private int incorrectCount;
@@ -26,7 +24,6 @@ public class GameModel {
     private LocalDateTime dateTime;
     private int gameScore;
     private int[] lettersUsed;
-    @Inject
     private GameScore gameScoregoal;
     
     
@@ -38,9 +35,10 @@ public class GameModel {
     
     
    
-    public GameModel(HangmanDictionary dictionary){
+    public GameModel(GameScore score, HangmanDictionary dictionary){
         //this.dictionary = new EnglishDictionaryDataSource();
         this.dictionary=dictionary;
+        this.gameScoregoal= score;
         randomWord = selectRandomWord();
         randomWordCharArray = randomWord.toCharArray();
         incorrectCount = 0;
